@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fontss/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="csss/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('c11.jpg');">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="c4.jpeg" alt="">
+				</div>
+
+				<form  action="dbr.php" method="post">
+					<h3>Register if new!!</h3>
+					<div class="form-group">
+						<input type="text" placeholder="First Name" class="form-control"  required>
+						<input type="text" placeholder="Last Name" class="form-control" required>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" name="N" placeholder="Username"   class="form-control" required>
+						<i class="zmdi zmdi-account"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="text"  name="E" placeholder="Email Address"   class="form-control" required>
+						<i class="zmdi zmdi-email"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" name="ph" placeholder="Phone Number" class="form-control" required>
+						<i class="zmdi zmdi-phone"></i>
+					</div>
+					<div class="form-wrapper">
+						<select name="G" id="" class="form-control" required>
+							<option value="" disabled selected>Gender</option>
+							<option value="male">Male</option>
+							<option value="femal">Female</option>
+							<option value="other">Other</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="date" name="D" placeholder="D.O.B" class="form-control" required>
+						<i class="zmdi zmdi-calendar"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" name="pw" placeholder="Password" class="form-control" required>
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					<button>Register
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>
